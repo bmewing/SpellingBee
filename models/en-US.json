@@ -1,0 +1,115 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "kingsport spelling bee plus",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SpellWordIntent",
+                    "slots": [
+                        {
+                            "name": "spelling",
+                            "type": "AMAZON.SearchQuery"
+                        }
+                    ],
+                    "samples": [
+                        "Spell {spelling}",
+                        "Word is spelled {spelling}"
+                    ]
+                },
+                {
+                    "name": "DefineWordIntent",
+                    "slots": [
+                        {
+                            "name": "word",
+                            "type": "word"
+                        }
+                    ],
+                    "samples": [
+                        "What does the word mean",
+                        "Please define the word",
+                        "Define the word",
+                        "Meaning of {word}",
+                        "What does {word} mean",
+                        "How is {word} defined",
+                        "{word} definition",
+                        "What is the definition of {word}",
+                        "Define {word}",
+                        "Please define {word}"
+                    ]
+                },
+                {
+                    "name": "SentenceIntent",
+                    "slots": [
+                        {
+                            "name": "word",
+                            "type": "word"
+                        }
+                    ],
+                    "samples": [
+                        "What is an example sentence using {word}",
+                        "What is an example sentence",
+                        "Example sentence",
+                        "Use the word in a sentence",
+                        "Example sentence using {word}",
+                        "Use {word} in a sentence",
+                        "Please use {word} in a sentence"
+                    ]
+                },
+                {
+                    "name": "YesIntent",
+                    "slots": [],
+                    "samples": [
+                        "of course",
+                        "yes please",
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "NoIntent",
+                    "slots": [],
+                    "samples": [
+                        "nope",
+                        "no"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "word",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "sad"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "happy"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
